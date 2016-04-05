@@ -10,6 +10,6 @@ public class MainWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(700, 700);
 		frame.setLocationRelativeTo(null);		
-
+//		frame.setResizable(false);
 	}
 }

@@ -44,6 +44,19 @@ public class Mundo {
 				lugar.setCelula(new CelulaViva());
 		}
 	}
+	
+	public void InverterCelula(Posicao posicao) {
+		for(Lugar lugar : mapa)
+		{
+			if(lugar.getX() == posicao.getX() && lugar.getY() == posicao.getY()){
+				if(lugar.getCelula() instanceof CelulaViva){
+					lugar.setCelula(new CelulaMorta());
+				}else{
+					lugar.setCelula(new CelulaViva());
+				}
+			}			
+		}
+	}
 
 	public ArrayList<Lugar> getMapa() {
 		return mapa;
